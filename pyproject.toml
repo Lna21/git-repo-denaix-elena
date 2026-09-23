@@ -1,0 +1,17 @@
+[project]
+name = "git-repo-denaix-elena"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "e-denaix-ece", email = "elena.denaix@edu.ece.fr" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+git-repo-denaix-elena = "git_repo_denaix_elena:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
