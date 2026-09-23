@@ -1,17 +1,17 @@
 [project]
 name = "git-repo-denaix-elena"
 version = "0.1.0"
-description = "Add your description here"
+description = "Dataset generator for users and orders"
 readme = "README.md"
-authors = [
-    { name = "e-denaix-ece", email = "elena.denaix@edu.ece.fr" }
+requires-python = ">=3.10"
+dependencies = [
+    "faker>=40.37.0",
 ]
-requires-python = ">=3.13"
-dependencies = []
 
 [project.scripts]
-git-repo-denaix-elena = "git_repo_denaix_elena:main"
+dataset-users = "git_repo_denaix_elena.dataset_users:main"
+dataset-orders = "git_repo_denaix_elena.dataset_orders:main"
 
 [build-system]
-requires = ["uv_build>=0.12.10,<0.13.0"]
-build-backend = "uv_build"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
