@@ -5,12 +5,14 @@ description = "Dataset generator for users and orders"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "duckdb>=1.5.5",
     "faker>=40.37.0",
 ]
 
 [project.scripts]
 dataset-users = "git_repo_denaix_elena.dataset_users:main"
 dataset-orders = "git_repo_denaix_elena.dataset_orders:main"
+orders-report = "git_repo_denaix_elena.orders_report:main"
 
 [build-system]
 requires = ["hatchling"]
